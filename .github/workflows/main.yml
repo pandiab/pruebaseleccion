@@ -6,7 +6,7 @@ on:
 name: Sonar Scan
 jobs:
    sonarqube:
-    name: SonarQube
+    name: inspeccion de codigo
     runs-on: ubuntu-latest
     steps:
     - name: Checking out
@@ -36,7 +36,7 @@ jobs:
 
    mensajeria:
     runs-on: ubuntu-latest
-    
+    needs: sonarqube
     steps:
       - name: Send custom JSON data to Slack workflow
         id: slack
