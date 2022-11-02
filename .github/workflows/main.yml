@@ -7,8 +7,9 @@ on:
 name: Sonar Scan
 jobs:
    sonarqube:
+    if: github.event.pull_request.merged == true
     name: inspeccion de codigo
     runs-on: ubuntu-latest
     steps:
     - name: "Example show SonarQube Quality Gate Status value"
-      run: echo "The Quality Gate status is "       
+      run: echo "Cambio el mensaje"       
