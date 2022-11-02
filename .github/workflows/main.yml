@@ -12,4 +12,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: "Example show SonarQube Quality Gate Status value"
-      run: echo "Cambio el mensaje"       
+      run: echo "Cambio el mensaje antes del PR"       
